@@ -30,5 +30,10 @@ app.get('/exploreInNode',(req,res)=>{
     }
     res.send(explorer)
 })
+
 //Query Params: Recibir parámetros por la url
 //http://localhost:3000/explorers/juan
+//req.params = {"explorerName":"Juan"}
+app.get('/explorers/:explorerName',(req,res) =>{
+    res.send(req.params)
+})

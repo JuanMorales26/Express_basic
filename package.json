@@ -1,0 +1,22 @@
+{
+  "name": "express_basic",
+  "version": "1.0.0",
+  "description": "Crear mi primer server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanMorales26/Express_basic.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuanMorales26/Express_basic/issues"
+  },
+  "homepage": "https://github.com/JuanMorales26/Express_basic#readme",
+  "devDependencies": {
+    "jest": "^28.0.2"
+  }
+}

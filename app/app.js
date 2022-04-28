@@ -7,18 +7,13 @@ const port = 3000
 
 //path inicial, responderá a la url localhost:3000
 app.get('/',(req,res)=>{
-    res.send('Hello World!')
-})
-
-//Con esto inicializamos esta app
-app.listen(port,()=>{
-    console.log(`Example app listening on port ${port}`)
+    res.send('Hello World')
 })
 
 //Respondiendo texto
 //localhost:3000/launchx
 app.get('/launchx',(req,res)=>{
-    res.send('Bienvenido a launchx')
+    res.send('Bienvenidos a launchX')
 })
 
 //Regresando un objeto
@@ -37,3 +32,10 @@ app.get('/exploreInNode',(req,res)=>{
 app.get('/explorers/:explorerName',(req,res) =>{
     res.send(req.params)
 })
+
+//Con esto inicializamos esta app
+app.listen(port,()=>{
+    console.log(`Example app listening on port ${port}`)
+})
+
+module.exports = app
